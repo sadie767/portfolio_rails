@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe Job do
-  it { should belong_to :employees}
+  it { should belong_to :employee}
 
   it 'will create new Job' do
     job = FactoryBot.create(:job)

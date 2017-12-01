@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe Blog do
-  it { should belong_to :employees}
+  it { should belong_to :employee}
 
   it 'will create new Blog' do
     blog = FactoryBot.create(:blog)
