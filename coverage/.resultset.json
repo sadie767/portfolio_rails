@@ -1,16 +1,17 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/rebeccamcintosh/Desktop/portfolio/spec/models/user_spec.rb": [
+      "/Users/rebeccamcintosh/Desktop/portfolio/spec/models/blog_spec.rb": [
         1,
+        null,
+        1,
+        2,
         null,
         1,
         1,
         1,
         1,
-        1,
-        1,
-        1,
+        null,
         null,
         null
       ],
@@ -535,6 +536,49 @@
         null,
         null
       ],
+      "/Users/rebeccamcintosh/Desktop/portfolio/spec/factories/blogs.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/rebeccamcintosh/Desktop/portfolio/spec/factories/employees.rb": [
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/rebeccamcintosh/Desktop/portfolio/spec/factories/jobs.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/rebeccamcintosh/Desktop/portfolio/spec/factories/projects.rb": [
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/rebeccamcintosh/Desktop/portfolio/spec/factories/schools.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/rebeccamcintosh/Desktop/portfolio/spec/factories/users.rb": [
         1,
         1,
@@ -548,7 +592,8 @@
       "/Users/rebeccamcintosh/Desktop/portfolio/config/routes.rb": [
         1,
         1,
-        null,
+        1,
+        1,
         null
       ],
       "/Users/rebeccamcintosh/Desktop/portfolio/app/models/user.rb": [
@@ -557,6 +602,10 @@
         null,
         1,
         null,
+        null,
+        1,
+        null,
+        1,
         null
       ],
       "/Users/rebeccamcintosh/Desktop/portfolio/app/models/application_record.rb": [
@@ -567,8 +616,107 @@
       "/Users/rebeccamcintosh/Desktop/portfolio/app/helpers/application_helper.rb": [
         1,
         null
+      ],
+      "/Users/rebeccamcintosh/Desktop/portfolio/app/models/blog.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/rebeccamcintosh/Desktop/portfolio/spec/models/employee_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        2,
+        2,
+        2,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/rebeccamcintosh/Desktop/portfolio/app/models/employee.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/rebeccamcintosh/Desktop/portfolio/spec/models/job_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/rebeccamcintosh/Desktop/portfolio/app/models/job.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/rebeccamcintosh/Desktop/portfolio/spec/models/project_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/rebeccamcintosh/Desktop/portfolio/app/models/project.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/rebeccamcintosh/Desktop/portfolio/spec/models/school_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        null,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/rebeccamcintosh/Desktop/portfolio/app/models/school.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/rebeccamcintosh/Desktop/portfolio/spec/models/user_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
       ]
     },
-    "timestamp": 1512152649
+    "timestamp": 1512165382
   }
 }
