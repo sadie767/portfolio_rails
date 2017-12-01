@@ -1,5 +1,11 @@
 <h1>Welcome!</h1>
-<h3>To out portfolio site.</h3>
+<h3>To our portfolio site.</h3>
 <br><br>
-<h4>Users, begin <%= link_to 'creating', new_user_registration_path %> your portfolio!</h4>
-<h4>Employers, <%= link_to 'find' %> employees.</h4>
+<h4>Users, <%= link_to 'sign in', new_user_session_path %> to begin your <%= link_to ' creating', new_employee_path %> your portfolio!</h4>
+<br>
+
+<% @employees.each do |employee| %>
+  <li>
+      <%= link_to employee.name, employee_path(employee) %>
+  </li>
+<% end %>

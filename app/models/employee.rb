@@ -3,4 +3,5 @@ class Employee < ActiveRecord::Base
   has_many :jobs
   has_many :projects
   has_many :blogs
+  
 end
