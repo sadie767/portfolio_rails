@@ -1,11 +1,10 @@
 class EmployeesController < ApplicationController
-  before_action :authorize, only: [:index]
+  before_action :authorize, only: [:edit, :new]
 
 
 def index
     @employees = Employee.all
   end
-end
 
 def show
   @employee = Employee.find(params[:id])
