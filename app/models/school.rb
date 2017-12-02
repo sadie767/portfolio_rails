@@ -1,3 +1,3 @@
 class School < ActiveRecord::Base
-  belongs_to :employee, optional: true
+  belongs_to :cv, optional: true
 end

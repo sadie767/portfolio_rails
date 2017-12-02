@@ -1,0 +1,16 @@
+<h1>Edit <%= @cv.name %></h1>
+<%= form_for @cv do |f| %>
+<div class="field">
+  <%= f.label :name %><br />
+  <%= f.text_field :name %>
+</div>
+<div class="actions">
+  <%= f.submit "Update" %>
+</div>
+
+<button class="btn ">
+  <%= link_to "Delete This Portfolio", cv_path(@cv),
+                    :data => {:confirm => "Are you sure?",
+                    :method => "delete"} %>
+                  </button>
+<% end %>

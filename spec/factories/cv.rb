@@ -1,5 +1,5 @@
 FactoryBot.define do
-  factory :employee do
+  factory :cv do
     name('Me')
   end
 end

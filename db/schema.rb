@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171201213753) do
+ActiveRecord::Schema.define(version: 20171202034123) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -18,15 +18,16 @@ ActiveRecord::Schema.define(version: 20171201213753) do
   create_table "blogs", force: :cascade do |t|
     t.string "title"
     t.text "description"
-    t.integer "employee_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "cv_id"
   end
 
-  create_table "employees", force: :cascade do |t|
+  create_table "cvs", force: :cascade do |t|
     t.string "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string "job"
+    t.string "school"
+    t.string "project"
   end
 
   create_table "jobs", force: :cascade do |t|
@@ -34,16 +35,16 @@ ActiveRecord::Schema.define(version: 20171201213753) do
     t.string "date_start"
     t.string "date_end"
     t.text "description"
-    t.integer "employee_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "cv_id"
   end
 
   create_table "projects", force: :cascade do |t|
     t.string "url"
-    t.integer "employee_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "cv_id"
   end
 
   create_table "schools", force: :cascade do |t|
@@ -51,9 +52,9 @@ ActiveRecord::Schema.define(version: 20171201213753) do
     t.string "date_start"
     t.string "date_end"
     t.string "major"
-    t.integer "employee_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "cv_id"
   end
 
   create_table "users", force: :cascade do |t|

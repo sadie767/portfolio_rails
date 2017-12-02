@@ -1,0 +1,67 @@
+<h2><%= @cv.name %></h2>
+<ul>
+   <% @cv.jobs.each do |job| %>
+     <li>
+       <h5><%= job.name %></h5>
+       <h5><%= job.date_start %></h5>
+       <h5><%= job.date_end %></h5>
+       <h5><%= job.description %></h5>
+
+       <%= link_to "Edit job", edit_cv_job_path(@cv, job), class: 'red' %> |
+       <%= link_to "Delete ", cv_job_path(@cv, job), class: 'red',
+                                :data => {:confirm => "Are you sure?",
+                                               :method => "delete"} %>
+     </li>
+     <br>
+   <% end %>
+ </ul>
+ <ul>
+    <% @cv.schools.each do |school| %>
+      <li>
+        <h5><%= school.name %></h5>
+        <h5><%= school.date_start %></h5>
+        <h5><%= school.date_end %></h5>
+        <h5><%= school.major %></h5>
+
+        <%= link_to "Edit school", edit_cv_school_path(@cv, school), class: 'red' %> |
+        <%= link_to "Delete ", cv_school_path(@cv, school), class: 'red',
+                                 :data => {:confirm => "Are you sure?",
+                                                :method => "delete"} %>
+      </li>
+      <br>
+    <% end %>
+  </ul>
+  <ul>
+     <% @cv.projects.each do |project| %>
+       <li>
+         <h5><%= project.url %></h5>
+
+         <%= link_to "Edit project", edit_cv_project_path(@cv, project), class: 'red' %> |
+         <%= link_to "Delete ", cv_project_path(@cv, project), class: 'red',
+                                  :data => {:confirm => "Are you sure?",
+                                                 :method => "delete"} %>
+       </li>
+       <br>
+     <% end %>
+   </ul>
+   <ul>
+      <% @cv.blogs.each do |job| %>
+        <li>
+          <h5><%= blog.title %></h5>
+          <h5><%= blog.description %></h5>
+
+          <%= link_to "Edit blog", edit_cv_blog_path(@cv, blog), class: 'red' %> |
+          <%= link_to "Delete ", cv_blog_path(@cv, blog), class: 'red',
+                                   :data => {:confirm => "Are you sure?",
+                                                  :method => "delete"} %>
+        </li>
+        <br>
+      <% end %>
+    </ul>
+
+<br>
+<p><%= link_to 'Edit', edit_cv_path %> user.</p>
+<p><%= link_to 'Create', new_cv_job_path(@cv) %> new employment history.</p>
+<p><%= link_to 'Create', new_cv_school_path(@cv) %> new education history.</p>
+<p><%= link_to 'Create', new_cv_project_path(@cv) %> new project.</p>
+<p><%= link_to 'Create', new_cv_blog_path(@cv) %> new blog.</p>

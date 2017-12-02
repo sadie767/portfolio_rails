@@ -1,0 +1,6 @@
+<h1>Users</h1>
+<% @cvs.each do |cv| %>
+  <h4><li>
+      <%= link_to cv.name, cv_path(cv) %>
+  </li></h4>
+<% end %>

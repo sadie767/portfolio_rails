@@ -13,7 +13,6 @@ class ApplicationController < ActionController::Base
   end
 
   def authorize_admin
-
     if current_user.admin === true
       new_location_path
     else
@@ -22,6 +21,14 @@ class ApplicationController < ActionController::Base
     end
   end
 
+  def authorize_user
+    if current_user.name === employee.name
+      edit_location_path
+    else
+      flash[:alert] = "Only the creator of portfolio can edit."
+      redirect_to '/'
+    end
+  end
 
   protected
 

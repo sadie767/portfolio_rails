@@ -1,0 +1,22 @@
+<h1>Create a Portfolio</h1>
+<br>
+<div class="field">
+<%= form_for @cv do |f| %>
+  <%= f.label :name %><br />
+  <%= f.text_field :name %>
+<br><br>
+  <%= f.label 'Enter Employment Including Dates.' %><br />
+  <%= f.text_area :jobs, :size => "120x12" %>
+<br><br>
+  <%= f.label 'Enter Education Including Dates.' %><br />
+  <%= f.text_area :schools, :size => "120x12" %>
+<br><br>
+  <%= f.label 'Enter url For Projects or Project Repository Sites.' %><br />
+  <%= f.text_field :projects %>
+</div>
+<br><br>
+<div class="actions">
+  <%= f.submit "Submit Portfolio" %>
+</div>
+<br><br><br><br><br>
+<% end %>

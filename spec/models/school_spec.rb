@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe School do
-  it { should belong_to :employee}
+  it { should belong_to :cv }
 
   it 'will create a new School' do
     school = FactoryBot.create(:school)
