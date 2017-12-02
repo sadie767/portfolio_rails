@@ -1,4 +1,5 @@
 class BlogsController < ApplicationController
+  before_action :authorize_admin, only: [:edit]
   def index
     @cv = cv.find(params[:cv_id])
     @blogs = Blog.all

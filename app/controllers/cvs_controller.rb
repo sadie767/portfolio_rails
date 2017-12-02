@@ -1,8 +1,6 @@
 class CvsController < ApplicationController
   before_action :authorize, only: [:index, :new]
-
-
-
+  before_action :authorize_admin, only: [:edit]
 def index
     @cvs = Cv.all
   end
