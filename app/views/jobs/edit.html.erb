@@ -1,0 +1,19 @@
+<h1>Edit Your Employment</h1>
+<div class="field">
+<%= form_for [@cv, @job] do |f| %>
+<br>
+  <%= f.label :name %><br />
+  <%= f.text_field :name %>
+  <br>
+  <%= f.label :date_start %><br />
+  <%= f.text_field :date_start %>
+  <br>
+  <%= f.label :date_end %><br />
+  <%= f.text_field :date_end %>
+  <br>
+  <%= f.label :description %><br />
+  <%= f.text_field :description %>
+  <br><br>
+  <p><%= f.submit %></p>
+<% end %>
+</div>
