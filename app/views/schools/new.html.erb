@@ -1,0 +1,19 @@
+<h1>Enter Project History</h1>
+<div class="field">
+<%= form_for [@cv, @school] do |f| %>
+<br>
+  <%= f.label :name %><br />
+  <%= f.text_field :name %>
+  <br>
+  <%= f.label :date_start %><br />
+  <%= f.text_field :date_start %>
+  <br>
+  <%= f.label :date_end %><br />
+  <%= f.text_field :date_end %>
+  <br>
+  <%= f.label :major %><br />
+  <%= f.text_field :major %>
+  <br><br>
+  <p><%= f.submit %></p>
+<% end %>
+</div>

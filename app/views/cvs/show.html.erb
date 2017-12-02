@@ -1,4 +1,5 @@
 <h2><%= @cv.name %></h2>
+<h2>Job History</h2>
 <ul>
    <% @cv.jobs.each do |job| %>
      <li>
@@ -15,6 +16,7 @@
      <br>
    <% end %>
  </ul>
+ <h2>Education</h2>
  <ul>
     <% @cv.schools.each do |school| %>
       <li>
@@ -31,6 +33,7 @@
       <br>
     <% end %>
   </ul>
+  <h2>Project Links</h2>
   <ul>
      <% @cv.projects.each do |project| %>
        <li>
@@ -44,8 +47,9 @@
        <br>
      <% end %>
    </ul>
+   <h2>Blog</h2>
    <ul>
-      <% @cv.blogs.each do |job| %>
+      <% @cv.blogs.each do |blog| %>
         <li>
           <h5><%= blog.title %></h5>
           <h5><%= blog.description %></h5>
@@ -65,3 +69,4 @@
 <p><%= link_to 'Create', new_cv_school_path(@cv) %> new education history.</p>
 <p><%= link_to 'Create', new_cv_project_path(@cv) %> new project.</p>
 <p><%= link_to 'Create', new_cv_blog_path(@cv) %> new blog.</p>
+<br><br><br><br><br><br>

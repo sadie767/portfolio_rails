@@ -1,0 +1,10 @@
+<h1>Enter Project Url</h1>
+<div class="field">
+<%= form_for [@cv, @project] do |f| %>
+<br>
+  <%= f.label :url %><br />
+  <%= f.text_field :url %>
+  <br><br>
+  <p><%= f.submit %></p>
+<% end %>
+</div>
